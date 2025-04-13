@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red Apple Store</title>
+  <style>
+    :root {
+      --apple-red: #ff1a1a;
+      --dark-red: #cc0000;
+      --light-gray: #f9f9f9;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--light-gray);
+      color: #333;
+    }
+
+    header {
+      background: var(--apple-red);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: var(--dark-red);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--apple-red);
+    }
+
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .product {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+
+    .product h3 {
+      color: var(--apple-red);
+    }
+
+    .product button {
+      background: var(--apple-red);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .product button:hover {
+      background: var(--dark-red);
+    }
+
+    footer {
+      background: var(--dark-red);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        flex: 1 0 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Red Apple Store</h1>
+    <p>Your one-stop shop for premium products</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="section">
+    <h2>Welcome to Red Apple Store</h2>
+    <p>Quality you can trust, prices you'll love.</p>
+  </section>
+
+  <section id="shop" class="section">
+    <h2>Shop Now</h2>
+    <div class="product-grid">
+      <div class="product">
+        <h3>Red Apple T-shirt</h3>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Apple Mug</h3>
+        <p>$9.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Fruit Basket</h3>
+        <p>$29.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>We are passionate about bringing you the best in the market.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <p>Fast delivery, quality assurance, and more!</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: info@redapplestore.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Red Apple Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
